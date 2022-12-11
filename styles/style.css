@@ -22,14 +22,12 @@
   justify-content: center;
   position: relative;
   background-color: #f2f2f2;
-  /* border: 1px solid red; */
-  /* выше установили ограничения для секции */
 }
 .logo {
   width: 228px;
   height: 32px;
 }
-.logo__place_header {
+.logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
@@ -58,6 +56,7 @@
   bottom: 30px;
   margin: 0;
   padding: 0;
+  z-index: 3;
 }
 .header__main-illustration {
   width: 765px;
@@ -68,7 +67,6 @@
   z-index: 2;
   object-fit: cover;
 }
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
@@ -83,9 +81,8 @@
   display: flex;
   justify-content: center;
   margin: 0;
-  padding: 0;
-  background-color: #f2f2f2;
-  padding-top: 100px;
+  padding: 100px 0 0;
+  background-color: white;
 }
 
 .two-columns {
@@ -93,28 +90,30 @@
   width: 80%;
   justify-content: space-between;
 }
-.two-columns_brief {
+.two-columns__brief {
   color: #2f80ed;
   width: 175px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   margin-top: 0;
+  margin-bottom: 0;
 }
-.two-columns_main-text {
+.two-columns__main-text {
   width: 80%;
   min-width: 784px;
 }
-.two-columns_paragraph {
+.two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   margin-top: 0;
+  margin-bottom: 30px;
 }
-.two-columns_paragraph:last-child {
+.two-columns__paragraph:last-child {
   margin-bottom: 0;
 }
-.two-columns_span-accent {
+.two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
@@ -122,12 +121,11 @@
 
 .digits {
   margin: 0 auto;
-  padding: 0;
-  padding-top: 100px;
+  padding: 100px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f2f2f2;
+  background-color: white;
 }
 .section-title {
   width: 60%;
@@ -137,7 +135,6 @@
   font-weight: 600;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
 }
 .section-subtitle {
   width: 60%;
@@ -147,6 +144,7 @@
   font-weight: normal;
   margin: 0;
   padding: 0;
+  margin-top: 20px;
 }
 .table {
   width: 1100px;
@@ -159,7 +157,7 @@
   width: 250px;
   margin-top: 60px;
 }
-.table__header {
+.table__heading {
   margin: 0;
   padding: 0;
   line-height: 1.15;
@@ -216,52 +214,54 @@
 }
 
 .kaufman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
   overflow: hidden;
   background-color: #1f1f1f;
   color: white;
   position: relative;
   z-index: 1;
+  padding: 90px 0 90px;
 }
 
-.section_title_theme_dark {
-  margin: 0;
+/* .section_title_theme-dark {
+  margin: 0 auto;
   padding: 0;
-  margin-top: 90px;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
   text-align: center;
-}
-.section_subtitle_theme_dark {
-  margin: 0;
+} */
+/* .section_subtitle_theme-dark {
+  margin: 0 auto;
   padding: 0;
   margin-top: 20px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   text-align: center;
-}
+} */
 
-.table__cell_theme_dark {
+.table__cell_theme-dark {
   width: 200px;
-  margin: 80px auto 0;
+  margin: 80px 0 0;
 }
 
-.table__header_theme_dark {
-  margin: 0 0 20px 0;
+/* .table__heading_theme-dark {
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
-}
-.table__text_theme_dark {
-  margin: 0;
+} */
+/* .table__text_theme-dark {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-}
-.table_theme_dark {
+} */
+/* .table_theme-dark {
   margin-bottom: 90px;
-}
+} */
 
 .kaufman__triangle {
   position: absolute;
@@ -284,7 +284,7 @@
   display: flex;
 }
 .footer__columns {
-  align-self: stretch;
+  /* align-self: stretch; */
   display: flex;
   width: 90%;
   min-height: 100%;
@@ -307,13 +307,13 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0;
 }
 .footer__column-links {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+  margin-top: 20px;
   margin-bottom: 16px;
 }
 .footer__social-icon {
