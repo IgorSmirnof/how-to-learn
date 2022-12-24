@@ -3,7 +3,6 @@
   width: 240px;
   margin: 0;
   padding: 0;
-  background-color: white;
 }
 .cards__item:last-child{
   margin-right: auto;

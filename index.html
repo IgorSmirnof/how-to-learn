@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <title>Научиться учиться</title>
   </head>
@@ -33,7 +32,7 @@
       </header>
 
       <main class="content">
-        <section class="description">
+        <section class="description" aria-label="Глава о проблемах в обучении">
           <article class="two-columns">
             <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
             <div class="two-columns__main-text">
@@ -131,26 +130,13 @@
           <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
 
           <div class="video__iframes">
-            <div class="video__iframe">
-              <iframe
-                width="515"
-                height="316"
-                src="https://www.youtube.com/embed/arj7oStGLkU?autoplay=0&enablejsapi=1"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="video__iframe">
-              <iframe
-                width="515"
-                height="316"
-                src="https://www.youtube.com/embed/5MgBikgcWnY?autoplay=1&enablejsapi=1"
-                allowfullscreen
-              ></iframe>
-            </div>
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU?autoplay=0&enablejsapi=1" allowfullscreen></iframe>
+            
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY?autoplay=1&enablejsapi=1" allowfullscreen></iframe>
           </div>
         </section>
 
-        <section class="oakly">
+        <section class="oakley" aria-label="Ненаучный подход к изучению точных наук">
           <article class="two-columns">
             <h2 class="two-columns__brief">История Барбары Оакли.</h2>
             <div class="two-columns__main-text">
@@ -226,7 +212,7 @@
 
         <section class="khan">
           <div class="khan__container">
-            <h3 class="khan__author">Салман Хан</h3>
+            <p class="khan__author">Салман Хан</p>
             <h2 class="khan__title">Весь мир — школа</h2>
             <blockquote class="khan__quote">
               Страсть и новаторство Сала Хана меняют процесс обучения миллионов
@@ -235,7 +221,7 @@
               получить навыки и знания, которые приносят успех в школе, карьере
               и жизни.
             </blockquote>
-            <h4 class="khan__quote-author">Джордж Лукас</h4>
+            <h3 class="khan__quote-author">Джордж Лукас</h3>
             <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
 
             <div class="khan__book-container">
@@ -244,7 +230,7 @@
                 src="./images/khan-book.jpg"
                 alt="книга салман хан весь мир - школа"
               />
-              <a class="khan__book-link links" href=""
+              <a class="khan__buy-link links" href="https://www.ozon.ru/product/ves-mir-shkola-preobrazovannoe-obrazovanie-162999126"
                 >Купить книгу &rarr;</a>
             </div>
           </div>
@@ -400,7 +386,7 @@
                   class="footer__social-icon"
                   src="./images/youtube-icon.svg"
                   alt="соцсеть YouTube"/>
-                  YuoTube
+                  YouTube
               </a>
               <a class="footer__column-link links" href="http://vk.com">
                 <img
