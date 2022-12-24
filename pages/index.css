@@ -1,6 +1,6 @@
 @import url(../vendor/normalize.css);
 @import url(../blocks/page/page.css);
-@import url(../blocks/links/links_opacity.css);
+@import url(../blocks/links/links.css);
 @import url(../blocks/rotation/rotation.css);
 
 @import url(../blocks/header/header.css);
