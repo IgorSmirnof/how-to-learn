@@ -1,0 +1,12 @@
+
+.cards {
+  width: 920px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  gap: 100px;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  /* align-items: flex-start; */
+}
